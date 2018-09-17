@@ -16,9 +16,9 @@ public class App {
 
 	public static void main(String[] args) throws Exception {
 
-		String bucketName = "testus2018";
-		String keyName ="karl-unrotated-kitten";
-		String filePath = "kitten1.jpg";
+		String bucketName = args[0];
+		String keyName = args[1];
+		String filePath = args[2];
 
 		try {
 			AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
